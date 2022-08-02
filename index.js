@@ -1,8 +1,9 @@
 import express from 'express';
 import pg from 'pg';
+import dotenv from "dotenv"; 
 
 const app = express()
-const PORT = 8080;
+const PORT = process.env.PORT;
 const {Pool} = pg;
 
 // const pool = new Pool({
@@ -12,7 +13,7 @@ const {Pool} = pg;
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("https://wescott-mvp-app.herokuapp.com/", (req, res) => {
     res.send('hello')
 })
 
