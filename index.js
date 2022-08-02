@@ -12,6 +12,9 @@ const {Pool} = pg;
 
 app.use(express.json());
 
+app.get("./", (req, res) => {
+    res.send('hello')
+})
 
 app.use((err, req, res, next) => {
     res.sendStatus(500)
