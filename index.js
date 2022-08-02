@@ -3,8 +3,9 @@ import pg from 'pg';
 import dotenv from "dotenv"; 
 
 const app = express()
-const PORT = process.env.PORT;
 const {Pool} = pg;
+let PORT = process.env.PORT
+if(PORT == null || PORT =='') PORT = 8000
 
 // const pool = new Pool({
 //     database: '',
