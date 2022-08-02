@@ -12,7 +12,7 @@ const {Pool} = pg;
 
 app.use(express.json());
 
-app.get("./", (req, res) => {
+app.get("/", (req, res) => {
     res.send('hello')
 })
 
