@@ -1,0 +1,29 @@
+
+
+  #profile-pic{
+    margin: 2em; 
+    height: 200px;
+    width: 80%;
+    border-radius: 60%;
+  }
+  #sub_taskbar{
+    position:absolute;
+    margin: 2em 25em;
+    padding-left:2em;
+    padding-right: 23em; 
+  }
+  
+
+  .update{
+    background-color: aqua;
+    height: 50px;
+    width: 200px; 
+    margin: 50px 50px;
+  }
+  
+  #infocard{
+    position: absolute;
+    margin-top: -30.2em;
+    margin-left: 25em;
+
+  }
